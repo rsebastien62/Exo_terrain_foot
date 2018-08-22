@@ -1,0 +1,140 @@
+/* Désolé Cristophe le gazon devant les buts n'est pas aligné avec celui du fond */
+
+body{
+  border: 2px solid white;
+  background-image: url(../images/herbe.jpg);
+  height: 96vh;
+}
+
+.centre-terrain{
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  border: 2px solid white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -75px;
+  margin-top: -75px;
+}
+
+.penalty-left{
+  height: 50vh;
+  width: 150px;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  position: absolute;
+  top: 50%;
+  margin-top: -25vh;
+  background-image: url(../images/herbe.jpg);
+}
+
+.goal-left{
+  height: 25vh;
+  width: 50px;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  position: absolute;
+  top: 50%;
+  margin-top: -12.5vh;
+}
+
+.point-left{
+  height: 4px;
+  width: 4px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 115px;
+  border-radius: 100%;
+}
+
+.tir-left{
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  border: 2px solid white;
+  position: absolute;
+  left: 85px;
+  top: 50%;
+  margin-top: -50px;
+  z-index: -1;
+}
+
+.penalty-right{
+  height: 50vh;
+  width: 150px;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -25vh;
+  background-image: url(../images/herbe.jpg);
+}
+
+.goal-right{
+  height: 25vh;
+  width: 50px;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -12.5vh;
+}
+
+.point-right{
+  height: 4px;
+  width: 4px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  border-radius: 100%;
+}
+
+.tir-right{
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  border: 2px solid white;
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  margin-top: -50px;
+  z-index: -1;
+}
+
+
+.separateur{
+  height: 96vh;
+  width: 2px;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+}
+
+.ballon{
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -15px;
+
+  animation-name: en-jeu;
+  animation-duration:1s;
+  animation-iteration-count: 1;
+  animation-timing-function:ease-in-out;
+}
+
+@-webkit-keyframes en-jeu {
+    0% { -webkit-transform:scale(5) ; }
+    80% {-webkit-transform:scale(-1); }
+    100% {-webkit-transform:scale(1); }
+}
